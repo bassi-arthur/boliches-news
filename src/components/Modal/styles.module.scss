@@ -1,0 +1,65 @@
+.overlay {
+  position: fixed;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.modalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  background-color: rgb(18, 18, 18);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 11px 15px -7px,
+    rgba(0, 0, 0, 0.14) 0px 24px 38px 3px, rgba(0, 0, 0, 0.12) 0px 9px 46px 8px;
+  padding: 32px;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    text-transform: capitalize;
+  }
+}
+
+.closeButton {
+  cursor: pointer;
+}
+
+.eventDetails {
+  list-style: none;
+  margin-top: 24px;
+
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+
+    p {
+      font-size: 16px;
+      max-width: 350px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+.durationTime {
+  display: flex;
+  align-items: center;
+}

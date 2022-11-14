@@ -1,0 +1,13 @@
+.calendarContainer {
+  margin: 0 auto;
+  padding: 2rem;
+  height: calc(100vh - 8rem) !important;
+  max-width: 1120px !important;
+  background-color: var(--gray-800);
+  border-radius: 16px;
+
+  * {
+    color: var(--gray-50);
+    border: none;
+  }
+}
